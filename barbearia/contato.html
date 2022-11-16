@@ -4,7 +4,6 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="produtos.css">
     <link rel="stylesheet" href="contato.css">
     <title>Contato</title>
 </head>
@@ -29,27 +28,34 @@
     <main>
         <div class="conteudo">
             <form class="contato-formulario">
-                <output>Nome</output>
-                <input type="text" name="nome" id="">
+                <label for="nome">Nome</label>
+                <input type="text" id="nome">
 
-                <output>E-mail</output>
-                <input type="email" name="email" id="">
+                <label for="email">E-mail</label>
+                <input type="text" id="email">
 
-                <output>Telefone</output>
-                <input type="tel" name="telefone" id="">
+                <label for="telefone">Telefone</label>
+                <input type="text" id="telefone">
 
-                <output>Mensagem</output>
-                <textarea name="mensagem" id="" cols="30" rows="10"></textarea>
+                <label for="mensagem">Mensagem</label>
+                <textarea id="mensagem" cols="30" rows="10"></textarea>
 
-                <output>Como prefere nosso contato?</output>
-                <option value="email">E-mail</option>
-                <option value="email">Ligação</option>
-                <option value="email">WhatsApp</option>
+                <label for="radio-email">Email</label>
+                <input type="radio" name="contato" value="email" id="radio-email">
+                <label for="radio-telefone">Telefone</label>
+                <input type="radio" name="contato" value="telefone" id="radio-telefone">
+                <label for="radio-whatsapp">WhatsApp</label>
+                <input type="radio" name="contato" value="whatsapp" id="radio-whatsapp">
+
+                <input type="submit" value="Enviar formulário">
             </form>
 
         </div>
     </main>
-
+    <footer>
+        <img src="assets/logo-branco.png" alt="">
+        <p class="copyright">Copyright &copy; Barbearia Alura - 2022</p>
+    </footer>
 </body>
 
 </html>
